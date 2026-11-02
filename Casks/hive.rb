@@ -6,25 +6,25 @@ cask "hive" do
     end
   end
 
-  version "1.0.5"
+  version "1.0.6"
 
   on_macos do
     on_arm do
-      sha256 "5c20b7b001ed494a2cd97b43b141096fae2f95c9b947e11511800f0452fe4034"
+      sha256 "3e58f1b347e9412065f1fff905ad7bbc209652faf25d1bf2ed79bc9658552020"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "32ac704e80d493271d713a2f91e185c1db37307c49de9bd8fd650a7dbdd426a5"
+      sha256 "333abfb7199159aabea925ebe2331c6e43ab4ef575ed54e56967d8746752d1c4"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "6a9afe488d791205901b1c3a174f573d3d6580815b3219fc493a5406a241e733"
+      sha256 "05d4e9f265b2719fac9468cde6348c309e582db50a3a505f1389a2e9f7b460a5"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "e8a04972704b0c2571ccb235618d85f745c882b00b99edfaa8a6d480a37e6234"
+      sha256 "4b01cd14617acfa86edf6c4b9fcf23119a49b2d904d0545101fe9d7c314c4a64"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_linux_amd64.tar.gz"
     end
   end
