@@ -6,25 +6,25 @@ cask "hive" do
     end
   end
 
-  version "1.1.0"
+  version "1.1.1"
 
   on_macos do
     on_arm do
-      sha256 "a52d40b4cd4dc48838fe1bdb36f67f3b1328e480b368b13f8e8bd7445270ff39"
+      sha256 "28f7b49a804becd0f7218559a6d9fe5881124a686cd15efd3a8c0f647d74ebc4"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_darwin_arm64.tar.gz"
     end
     on_intel do
-      sha256 "7a25f61e271c1991303ec06808cb01d161e71fa8eda57a646ad32f2ac918cc1a"
+      sha256 "20d96e52d0c1552aa927c904c2a690c0e4e0adbe64f505322a772f4f27783a53"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_darwin_amd64.tar.gz"
     end
   end
   on_linux do
     on_arm do
-      sha256 "a3648af1041c53a339f361fe17d77048a5f4f9533ed70567521b50b98d028c9e"
+      sha256 "6efcd0bd918554df82d40e6c575313fad7701fcc91270b5d0bde850bfb1da49e"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_linux_arm64.tar.gz"
     end
     on_intel do
-      sha256 "0dfac1fae714d8d41984592d0afd4cca7aeebfc3afba5dd392c49c18a11c7f8b"
+      sha256 "d9f8fcd0030786d1de10bad84db454fd324460d5d998707f2e362d983f911235"
       url "https://github.com/SadriShehu/hive/releases/download/v#{version}/hive_#{version}_linux_amd64.tar.gz"
     end
   end
@@ -42,7 +42,7 @@ cask "hive" do
 
   binary "hive"
 
-  # No zap stanza required
+  zap :not_required
 
   caveats <<~EOS
     Run `hive install` to connect every agent found on your PATH.
